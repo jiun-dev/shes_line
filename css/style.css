@@ -69,10 +69,22 @@ head {
     position: fixed;
     float: left;
     z-index: 9999;
+    margin-top: 25px ;
     margin-left: 1200px;
     border: 1px solid #e1e1e1;
     text-align: center;
     line-height: 26px;
+    
+}
+
+.language ul {
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px 8px;
+}
+
+.submenu {
+    display: none;
 }
 /*---------------section-----------------*/
 section {
