@@ -19,3 +19,12 @@ const slide = _ => {
 window.onload = function () {
   slide()
 }
+
+$(document).ready(function(){
+  $(".language ul").mouseenter(function(){
+    $(".submenu").stop().slideDown();
+  })
+  $(".language ul").mouseleave(function(){
+    $(".submenu").stop().slideUp();
+  })
+})
