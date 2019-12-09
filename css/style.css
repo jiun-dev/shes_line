@@ -111,6 +111,7 @@ section {
 
 .event_wrap {
     margin-top: 100px;
+    overflow:hidden
 }
 
 .asideText {
@@ -124,11 +125,49 @@ section {
 .event {
     text-align: center;
     margin-left: 50px;
+   
 }
+
+.event_left {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+
+.event_left:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.event_right {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+
+.event_right:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
 
 .line_wrap {
     margin-top: 150px;
     margin-left: 150px;
+    
 }
 
 .line_up {
@@ -141,11 +180,17 @@ section {
 .hair_acc {
     text-align: center;
     margin-top: 150px;
+    opacity:0;
+    margin-left:-300px;    
+    max-width:100%;
 } 
 
 .cosmetic {
     margin-top: 50px;
     float: left;
+    opacity:0;
+    margin-left:-300px;    
+    max-width:100%;
 }
 
 .hair {
@@ -153,15 +198,30 @@ section {
     float: right;
     margin-top: 450px;
     margin-left: 650px;
+    opacity:0;
+    margin-left:-300px;    
+    max-width:100%;
 }
 
 .metal {
     margin-top: 900px;
+    opacity:0;
+    margin-left:-300px;    
+    max-width:100%;
 }
 
 .video {
     margin-top: 150px; 
     text-align: center;
+}
+
+.product {
+    margin:5px;
+    border: #fff 2px solid;
+}
+
+.product:hover {
+    border: pink 2px solid;
 }
 
 .product_top {
