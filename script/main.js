@@ -1,3 +1,5 @@
+/*--------슬라이드 ---------*/
+
 const all = ele => document.querySelectorAll(ele)
 const one = ele => document.querySelector(ele)
 const slide = _ => {
@@ -20,6 +22,7 @@ window.onload = function () {
   slide()
 }
 
+/*--------마우스 오버시 스크롤 다운 ---------*/
 $(document).ready(function(){
   $(".language ul").mouseenter(function(){
     $(".submenu").stop().slideDown();
@@ -28,3 +31,61 @@ $(document).ready(function(){
     $(".submenu").stop().slideUp();
   })
 })
+
+/*--------스크롤시 이미지 fade in ---------*/
+$(document).ready(function() {
+  $(window).scroll( function(){
+      $('.hair_acc').each( function(i){
+          
+          var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          
+          if( bottom_of_window > bottom_of_element ){
+              $(this).animate({'opacity':'1','margin-left':'150px'},1000);
+          }
+          
+      }); 
+  });
+});
+$(document).ready(function() {
+  $(window).scroll( function(){
+      $('.cosmetic').each( function(i){
+          
+          var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          
+          if( bottom_of_window > bottom_of_element ){
+              $(this).animate({'opacity':'1','margin-left':'20px'},1000);
+          }
+          
+      }); 
+  });
+});
+$(document).ready(function() {
+  $(window).scroll( function(){
+      $('.hair').each( function(i){
+          
+          var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          
+          if( bottom_of_window > bottom_of_element ){
+              $(this).animate({'opacity':'1','margin-left':'500px'},1000);
+          }
+          
+      }); 
+  });
+});
+$(document).ready(function() {
+  $(window).scroll( function(){
+      $('.metal').each( function(i){
+          
+          var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          
+          if( bottom_of_window > bottom_of_element ){
+              $(this).animate({'opacity':'1','margin-left':'150px'},1000);
+          }
+          
+      }); 
+  });
+});
